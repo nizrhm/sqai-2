@@ -1,13 +1,13 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
-import Cta from "@/components/blog/Cta.astro";
-import Title from "@components/global/Title.astro";
-import Comments from "@components/blog/Comments.astro";
-import { type CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import Cta from "@/components/blog/Cta.astro";
+import type { AstroSeoProps } from "@astrolib/seo";
+import Comments from "@components/blog/Comments.astro";
+import Title from "@components/global/Title.astro";
+import { getLangFromUrl, useTranslatedPath, useTranslations } from "@i18n/utils";
 import { Icon } from "astro-icon/components";
-import { getLangFromUrl, useTranslations, useTranslatedPath } from "@i18n/utils";
-import { type AstroSeoProps } from "@astrolib/seo";
+import BaseLayout from "./BaseLayout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

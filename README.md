@@ -1,44 +1,45 @@
-# Astro & Tailwind CSS Starter Kit by majestico.co
+# [Mintaka](https://mintaka.majestico.co)
 
-## Template Integrations
-- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
-- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- @astrojs/mdx - https://docs.astro.build/en/guides/markdown-content/
-- @astrojs/rss - https://docs.astro.build/en/guides/rss/
-- @astrojs/prism - https://docs.astro.build/en/reference/api-reference/#prism-
-- Astrolib SEO - https://github.com/onwidget/astrolib/tree/main/packages/seo
-## Template Structure
+> [!IMPORTANT]
+> Currently this theme only works with the premium version of GSAP, the steps to use the standard version will be available in the future.
 
-Inside of your Astro project, you'll see the following folders and files:
+<a href="https://astro.build/">![Astro](.github/images/astro-icon.png)</a>
+<a href="https://tailwindcss.com/">![Tailwind](.github/images/tailwind-icon.png)</a>
+<a href="https://gsap.com/">![Gsap](.github/images/gsap.png)</a>
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Mintaka is a template made with [Astro](https://astro.build), [Tailwind](https://tailwindcss.com/) and [Gsap](https://gsap.com/)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/majesticooss/mintaka)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/majesticooss/mintaka)
 
-Any static assets, like images, can be placed in the `public/` directory.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/majesticooss/mintaka)
 
-## Commands
 
-All commands are run from the root of the project, from a terminal:
+### [🧪 Site preview →](https://mintaka.majestico.co)
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+### [🧑‍🚀 Astro website →](https://astro.build/)
 
-## Want to learn more?
+### [🕮 Astro docs →](https://docs.astro.build/en/getting-started/)
 
-Feel free to check Astros [documentation](https://docs.astro.build)
+---
+
+## Preview
+
+![Mintaka Preview](.github/images/majestico_share.gif)
+
+## 🧪 Test
+
+On the folder run
+
+1. `bun install`  <small>(or `yarn` or `pnpm i`)</small>
+2. `bun run dev`  <small>(or `yarn dev` or `pnpm dev`)</small>
+
+## ✅ Features
+
+- [x] Localization
+- [x] Blog
+
+---
+
+<p align="right"><a href="https://majestico.co" target="_blank">majestico.co</p>

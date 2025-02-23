@@ -73,7 +73,7 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				display: ["FF Grotesk Regular", ...defaultTheme.fontFamily.sans],
+				display: ["Satoshi", ...defaultTheme.fontFamily.sans],
 				sans: ["Inter", ...defaultTheme.fontFamily.sans],
 				mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
 			},

@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import WokCard from "@components/work/WokCard.astro";
 import yourProjectImage from "@assets/images/projects/yourProject.png";
-import { getLangFromUrl, useTranslations, useTranslatedPath } from "@i18n/utils";
+import WokCard from "@components/work/WokCard.astro";
+import { getLangFromUrl, useTranslatedPath, useTranslations } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -31,28 +31,28 @@ const possiblePositions = [
 		translateY: 40,
 	},
 	{
-		column: 4,
-		row: 1,
+		column: 3,
+		row: 2,
 		translateY: randomSteps(60, 80),
 	},
 	{
-		column: 3,
-		row: 2,
+		column: 2,
+		row: 3,
 		translateY: randomSteps(40, 80),
 	},
 	{
 		column: 1,
-		row: 3,
+		row: 4,
 		translateY: randomSteps(20, 40),
 	},
 	{
-		column: 4,
-		row: 3,
+		column: 3,
+		row: 5,
 		translateY: randomSteps(20, 80),
 	},
 	{
 		column: 2,
-		row: 4,
+		row: 6,
 		translateY: randomSteps(60, 96),
 	},
 ];
@@ -85,7 +85,7 @@ const allProjects = (await getCollection("projects"))
 					link={`/work/${project.slug}`}
 					class:list={[
 						possiblePositions[index]
-							? `col-span-full col-start-1 translate-y-40 md:col-span-1 md:translate-y-${possiblePositions[index].translateY} md:col-start-${possiblePositions[index].column} md:row-start-${possiblePositions[index].row}`
+							? `col-span-full col-start-1 translate-y-40 md:col-span-2 md:translate-y-${possiblePositions[index].translateY} md:col-start-${possiblePositions[index].column} md:row-start-${possiblePositions[index].row}`
 							: "",
 					]}
 				/>
